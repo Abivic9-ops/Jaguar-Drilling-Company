@@ -11,3 +11,281 @@
     text-decoration: none;
     cursor: pointer;
 }
+
+
+body {
+    font-family: "poppins", sans-serif;
+
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Styling of the Footer by Victor | Abivic9-Ops */
+.section-footer {
+    width: 100%;
+    padding: 40px;
+    background: #ffffff;
+    background-image: url(images/footer_image.png);
+    height: 100%;
+    animation: forwards;
+    animation-duration: 3s;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+ 
+}
+
+.footer-content {
+    display: flex;
+    gap: 1.0em;
+
+}
+
+.contact-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 15px;
+    max-width: 20%;
+    gap: 1.5rem;
+}
+
+.contact-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 5px;
+}
+
+.contact-info h3:hover {
+    color: #37a1f2;
+}
+
+.email-part {
+    display: flex;
+    gap: 10px;
+}
+
+.email-part a {
+    font-size: 1.0rem;
+    color: #37a1f2;
+
+}
+.email-part p{
+        transition: 2s;
+}
+.email-part p:hover {
+    transform: translateY(-5px);
+}
+
+.phone-part {
+    display: flex;
+    gap: 10px;
+}
+
+.location-info {
+    display: flex;
+    gap: 10px;
+}
+
+
+.services-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 15px;
+    max-width: 20%;
+    gap: 0.8rem;
+}
+
+
+.services-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+
+}
+
+.services-info h3:hover {
+    color: #37a1f2;
+}
+
+.services-info li {
+    padding: 5px;
+    margin-bottom: 8px;
+    justify-content: space-around;
+    align-items: center;
+    transition: 3s;
+}
+
+.services-info li:hover {
+    cursor: pointer;
+    text-decoration: double;
+    transform: translateY(8px);
+
+}
+
+.certifications-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 15px;
+    max-width: 20%;
+    gap: 0.8rem;
+}
+
+.certifications-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+
+.certifications-info h3:hover {
+    color: #37a1f2;
+}
+
+
+.certifications-info li {
+    padding: 5px;
+    margin-bottom: 8px;
+    justify-content: space-around;
+    align-items: center;
+    transition: 3s;
+}
+
+.certifications-info li:hover {
+    cursor: pointer;
+    text-decoration: double;
+    transform: translateY(8px);
+
+}
+
+.links-info {
+    display: flex;
+    flex-direction: column;
+    padding: 15px;
+    margin: 15px;
+    max-width: 20%;
+    gap: 0.8rem;
+
+}
+
+.links-info a {
+    transition: 2s;
+}
+
+.links-info a:hover {
+    cursor: pointer;
+    transform: translateY(-8px);
+    animation: forwards;
+}
+
+
+.links-info h3 {
+    font-size: 1.2rem;
+    margin-bottom: 0px;
+}
+
+.links-info h3:hover {
+    color: #37a1f2;
+}
+
+
+.social-media {
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin: 35px;
+    position: relative;
+    padding: 15px;
+    justify-content: space-around;
+
+
+}
+
+.social-media h3 {
+    font-size: 1.2rem;
+    margin-top: 0px;
+    margin: 0;
+}
+
+.social-media h3:hover {
+    color: #37a1f2;
+}
+
+
+.social-media a {
+    border: 2px solid #37a1f2;
+    display: inline-flex;
+    border-radius: 100%;
+    background: #d4d7df;
+    color: #0a0a0a;
+    font-size: 1.8rem;
+    height: 3.0rem;
+    width: 3.0rem;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    justify-items: center;
+    transition: 500ms ease;
+    animation-name: spin;
+    animation-duration: 2s;
+    animation-iteration-count: 7;
+    /* animation-delay: 1s; */
+    box-shadow: 0 0 0.3rem #37a1f2;
+}
+
+.social-media a:hover {
+    background: #37a1f2;
+    color: #f0f0f0;
+    overflow: hidden;
+    scale: 0.3;
+}
+
+@keyframes spin {
+    0% {}
+
+    50% {
+        scale: 0.5;
+    }
+
+    100% {
+        transform: rotate(360deg);
+        scale: 0.5;
+    }
+}
