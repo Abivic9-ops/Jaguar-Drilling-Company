@@ -19,6 +19,10 @@ body {
 }
 
 /* HOME PAGE STYLING */
+/* #home{
+    font-family: "poppins", sans-serif;
+     background: linear-gradient(90deg, #56c2f7, #ffd57e, #f78ca0); */
+
 .pre-head {
     height: 60px;
     background-color: rgb(116, 203, 204);
@@ -68,22 +72,20 @@ header nav a{
 
 .home-image{
     width: 95%;
-    padding: 15px 15px 15px 30px;
+    padding: 10px;
     border-radius: 15px;
 }
 .home-image-container{
-    background: linear-gradient(pink,gray,black,gold);
-    justify-content: center;
-    align-items: center;
+    /* background: linear-gradient(rgb(212, 164, 172),gray,black,rgb(155, 148, 112)); */
+    background: linear-gradient(160deg, #89f7fe, #66a6ff, #37a1f2, #1e3c72);    align-items: center;
     position: relative;
-    border-radius: 20px;
+    margin-bottom: 30px;
 }
 .home-text{
     position: absolute;
     top: 70%;
     left: 40%;
     transform: translate(-50%, -50%);
-    color: #f0f0f0;
     text-align: center;
     width: 95%;
 }
@@ -114,39 +116,80 @@ header nav a{
     }
 
 }
+.flex{
+    margin-top: 30px;
+    display: flex;
+    gap: 2em
+}
+#catch{
+    text-align: center;
+    padding-top: 15px;
+    font-size: xx-large;
+    font-weight: 700;
+    color: green;
+    animation: typing 1.2s ease-in-out;
+}
+@keyframes typing {
+    from { width: 30%; }
+    50% { width: 60%}
+    to { width: 100%; }
+}
 .logo-1{
     max-width: 30%;
     max-height: 40%;
     border-radius: 40px;
 }
 
-@media screen and(max-width: 800px) {
+@media screen and (max-width: 800px) {
     .home-image-container{
-        width: 80vw;
+        width: 100vw;
+        height: 50vh;
         display: flex;
         justify-content: center;
         align-items: center
     }
     .home-image{
-        width: 80vw;
+        width: 98vw;
+        height: 40vw;
+        height: 48vh;
         box-shadow: pink;
     }
-    .Logo-text{
+    #Logo-text{
         left: 50px;
         transform: translate(-50%, -50%);
     }
     .home-text{
         display: flex;
+        padding-left: 40px;
     }
     .logo-1{
-        display: none;
+        max-width: 30%;
+        max-height: 20%;
     }
     
 }
+
+.intro{
+    margin-top: 30px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background: linear-gradient(135deg, #37a1f2, #6dd5ed, #ffffff);
+    font-size: x-large;
+    font-weight: 700;
+    color: darkmagenta;
+}
+.intro hr{
+    width: 70%;
+    height: 10px;
+    border-radius: 10px;
+    background-color: darkslateblue;
+}
 .con-main{
     display: flex;
+    flex-direction: column;
     gap: 2em;
-    margin: 20px;
+    margin-top: 30px;
+    margin-bottom: 30px;
     justify-content: center;
     align-items: center;
     transition: all 4s ease-in-out;
@@ -174,16 +217,58 @@ header nav a{
         transform: translateY(0);
         opacity: 0.6;
     }
+}
+
+p{
+    font-size: larger;
+}
+.dr-2{
+    width: 450px;
+    height: 300px;
+}
+.p2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(47, 65, 80);
+    font-weight: 500;
+}
+.con-2{
+    padding: 15px;
+    margin: 20px;
+    display: flex;
+    gap: 2em;
+    border: 4px solid black;
+    border-radius: 20px
+}
+.con-2 p {
+    word-wrap: normal;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    
+}
+@media screen and (max-width: 800px){
+    .con-2{
+        display: flex;
+        flex-direction: column;
+        width: 90vw;
+        max-height: fit-content;
+    }
+    .p2{
+        width: 80vw;
+        max-height: fit-content;
+    
+    }
+    .dr-2{
+        width: 370px;
+        height: 280px;
+    }
+}
 
 /* complexxxxxx */
-}
-.con-main{
-    background: linear-gradient(gray,aqua,rgb(124, 91, 91),lightblue);
-    display: flex;
-    flex-direction: column;
-    gap: 3em;
-    border-radius: 40px;
-}
+
+
 .Waziwa-1{
     width: 900px;
     border-radius: 40px;
@@ -196,28 +281,55 @@ header nav a{
 }
 .image-2{
     border-radius: 30px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 45px;
+}
+.logo-2{
+    width: 50%;
+    height: 60%;
+    padding-left: 20px;
+    border-radius: 10px;
+}
+.image-2 p {
+    font-size: xx-large;
+    font-weight: 700;
+    font-family: serif;
+    color:darkorange
 }
 
-@media  screen and(max-width: 800px) {
+@media  screen and (max-width: 800px) {
     .con-main{
         display: flex;
         flex-direction: column;
-        width: 80vw;
+        width: 100vw;
         max-height: fit-content;
         /* justify-content: center;
         align-items: center; */
     }
     .Waziwa-1{
-        max-width: 80vw;
-        width: 200px;
-        max-height: fit-content;
+        width: 100vw;
+        align-items: center;
+        justify-content: center;
+        text-align: center
     }
     .logo-2{
-        display: none;
-    }
+        width: 350px;
+        height: 300px;
+        padding-bottom: 15px;
+        border-radius: 20px;}
+    
     .image-2{
-        display: none;
+        display: flex;
+        flex-direction: column-reverse;
+        background-color: #c7c6c9;
     }
+    .image-2 p {
+        padding: 10px;
+    }
+}
 /* complexxxxxx */
 
 
@@ -1049,7 +1161,4 @@ header nav a{
     100% {
         transform: rotate(360deg);
     }
-}
-
-    
 }
