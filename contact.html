@@ -158,6 +158,60 @@ button:hover {
     }
 }
 
+/* ===== SOCIAL ICONS ===== */
+.social-icons {
+    margin-top: 30px;
+    display: flex;
+    justify-content: center;
+    gap: 18px;
+}
+
+.icon {
+    width: 45px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    background: rgba(255,255,255,0.08);
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    transition: 0.4s ease;
+    border: 1px solid rgba(255,255,255,0.2);
+}
+
+/* ===== HOVER GLOW COLORS ===== */
+.facebook:hover {
+    background: #1877f2;
+    box-shadow: 0 0 15px #1877f2;
+}
+
+.instagram:hover {
+    background: #e1306c;
+    box-shadow: 0 0 15px #e1306c;
+}
+
+.twitter:hover {
+    background: #000;
+    box-shadow: 0 0 15px #000;
+}
+
+.linkedin:hover {
+    background: #0a66c2;
+    box-shadow: 0 0 15px #0a66c2;
+}
+
+.youtube:hover {
+    background: #ff0000;
+    box-shadow: 0 0 15px #ff0000;
+}
+
+.whatsapp:hover {
+    background: #25d366;
+    box-shadow: 0 0 15px #25d366;
+}
+
 </style>
 </head>
 <body>
@@ -189,11 +243,21 @@ button:hover {
             <option>Industrial Drilling</option>
         </select>
 
-        <textarea class="full" placeholder="Describe your project or inquiry..."></textarea>
+        <textarea maxlength="250" placeholder="Describe your project or inquiry..."></textarea>
 
         <button type="submit">Send Message</button>
 
     </form>
+    <div class="social-icons">
+
+    <a href="#" class="icon facebook"><i class="fab fa-facebook-f"></i></a>
+    <a href="#" class="icon instagram"><i class="fab fa-instagram"></i></a>
+    <a href="#" class="icon twitter"><i class="fab fa-x-twitter"></i></a>
+    <a href="#" class="icon linkedin"><i class="fab fa-linkedin-in"></i></a>
+    <a href="#" class="icon youtube"><i class="fab fa-youtube"></i></a>
+    <a href="#" class="icon whatsapp"><i class="fab fa-whatsapp"></i></a>
+
+</div>
 
     <div class="contact-info">
         📞 0711 380 689 | 📧 info@waziwa drillers.com  
