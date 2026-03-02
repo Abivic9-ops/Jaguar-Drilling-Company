@@ -74,10 +74,10 @@ header nav a {
 
 }
 
-<<<<<<< HEAD
+
 /* home image container editing */
-.home-image-container{
-=======
+.home-image-container{}
+
 .home-image {
     width: 95%;
     padding: 10px;
@@ -85,7 +85,6 @@ header nav a {
 }
 
 .home-image-container {
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
     /* background: linear-gradient(rgb(212, 164, 172),gray,black,rgb(155, 148, 112)); */
     background: linear-gradient(90deg, #56c2f7, #74cbcc, #2bb7b9);
 
@@ -93,18 +92,17 @@ header nav a {
     position: relative;
     margin-bottom: 30px;
 }
-<<<<<<< HEAD
+
 .home-image{
     width: 95%;
     padding: 10px;
     border-radius: 15px;
 }
 
-.home-text{
-=======
+.home-text{}
+
 
 .home-text {
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
     position: absolute;
     top: 70%;
     left: 40%;
@@ -146,12 +144,8 @@ header nav a {
 
 }
 
-<<<<<<< HEAD
 /* Flex container editing */
-.flex{
-=======
 .flex {
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
     margin-top: 30px;
     display: flex;
     gap: 2em
@@ -166,7 +160,7 @@ header nav a {
     word-wrap: none;
     animation: dropLetter 10s infinite ease-in-out;
 }
-<<<<<<< HEAD
+
 .drop-text {
     display: inline-block;
 }
@@ -262,7 +256,9 @@ header nav a {
 }
 
 .logo-1{
-=======
+    max-width: 30%;
+    max-height: 40%;
+    border-radius: 40px;
 
 @keyframes typing {
     from {
@@ -278,11 +274,6 @@ header nav a {
     }
 }
 
-.logo-1 {
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
-    max-width: 30%;
-    max-height: 40%;
-    border-radius: 40px;
 }
 
 @media screen and (max-width: 800px) {
@@ -318,12 +309,8 @@ header nav a {
 
 }
 
-<<<<<<< HEAD
 /* Intro Container editing */
 .intro{
-=======
-.intro {
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
     margin-top: 30px;
     margin-bottom: 30px;
     padding: 20px;
@@ -339,7 +326,6 @@ header nav a {
     border-radius: 10px;
     background-color: darkslateblue;
 }
-<<<<<<< HEAD
 
 
 /* p{
@@ -350,9 +336,6 @@ header nav a {
 
 
 /* Con-2 editing */
-.con-2{
-=======
-
 .con-main {
     display: flex;
     flex-direction: column;
@@ -411,7 +394,6 @@ p {
 }
 
 .con-2 {
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
     padding: 15px;
     margin: 20px;
     display: flex;
@@ -420,7 +402,7 @@ p {
     border-radius: 20px
 }
 
-<<<<<<< HEAD
+
 .p2{
     align-items: center;
     justify-content: center;
@@ -434,8 +416,7 @@ p {
     height: 300px;
 }
 
-=======
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
+
 .con-2 p {
     word-wrap: normal;
     text-align: center;
@@ -465,11 +446,6 @@ p {
 }
 
 /* Image-2 container editing */
-
-<<<<<<< HEAD
-.image-2{
-=======
-
 .Waziwa-1 {
     width: 900px;
     border-radius: 40px;
@@ -483,7 +459,6 @@ p {
 }
 
 .image-2 {
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
     border-radius: 30px;
     display: flex;
     align-items: center;
@@ -491,17 +466,13 @@ p {
     margin-top: 35px;
     margin-bottom: 45px;
 }
-<<<<<<< HEAD
+
 .logo-2{
     width: 100%;
     height: 100%;
 }
 
 .logo-2{
-=======
-
-.logo-2 {
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
     width: 50%;
     height: 60%;
     padding-left: 20px;
@@ -515,7 +486,7 @@ p {
     color: darkorange
 }
 
-<<<<<<< HEAD
+
 /* con-main container editing */
 .con-main{
     display: flex;
@@ -575,10 +546,6 @@ p{
 
 @media  screen and (max-width: 800px) {
     .con-main{
-=======
-@media screen and (max-width: 800px) {
-    .con-main {
->>>>>>> b535d4b9b0743f560f029f27f0ad75c39efa0eed
         display: flex;
         flex-direction: column;
         width: 100vw;
