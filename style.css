@@ -70,17 +70,19 @@ header nav a{
 
 }
 
-.home-image{
-    width: 95%;
-    padding: 10px;
-    border-radius: 15px;
-}
+/* home image container editing */
 .home-image-container{
     /* background: linear-gradient(rgb(212, 164, 172),gray,black,rgb(155, 148, 112)); */
     background: linear-gradient(160deg, #89f7fe, #66a6ff, #37a1f2, #1e3c72);    align-items: center;
     position: relative;
     margin-bottom: 30px;
 }
+.home-image{
+    width: 95%;
+    padding: 10px;
+    border-radius: 15px;
+}
+
 .home-text{
     position: absolute;
     top: 70%;
@@ -116,6 +118,8 @@ header nav a{
     }
 
 }
+
+/* Flex container editing */
 .flex{
     margin-top: 30px;
     display: flex;
@@ -127,13 +131,103 @@ header nav a{
     font-size: xx-large;
     font-weight: 700;
     color: green;
-    animation: typing 1.2s ease-in-out;
+    word-wrap: none;
+    animation: dropLetter 10s infinite ease-in-out;
 }
-@keyframes typing {
-    from { width: 30%; }
-    50% { width: 60%}
-    to { width: 100%; }
+.drop-text {
+    display: inline-block;
 }
+
+.drop-text span {
+    display: inline-block;
+    animation: dropLetter 10s infinite ease-in-out;
+}
+
+/* Individual letter delays */
+
+.drop-text span:nth-child(1)  { animation-delay: 0.1s; }
+.drop-text span:nth-child(2)  { animation-delay: 0.29s; }
+.drop-text span:nth-child(3)  { animation-delay: 0.39s; }
+.drop-text span:nth-child(4)  { animation-delay: 0.49s; }
+.drop-text span:nth-child(5)  { animation-delay: 0.59s; }
+.drop-text span:nth-child(6)  { animation-delay: 0.69s; }
+.drop-text span:nth-child(7)  { animation-delay: 0.79s; }
+.drop-text span:nth-child(8)  { animation-delay: 0.89s; }
+.drop-text span:nth-child(9)  { animation-delay: 0.99s; }
+.drop-text span:nth-child(10) { animation-delay: 1.09s; }
+.drop-text span:nth-child(11) { animation-delay: 1.19s; }
+.drop-text span:nth-child(12) { animation-delay: 1.29s; }
+.drop-text span:nth-child(13) { animation-delay: 1.39s; }
+.drop-text span:nth-child(14) { animation-delay: 1.49s; }
+.drop-text span:nth-child(15) { animation-delay: 1.59s; }
+.drop-text span:nth-child(16) { animation-delay: 1.69s; }
+.drop-text span:nth-child(17) { animation-delay: 1.79s; }
+.drop-text span:nth-child(18) { animation-delay: 1.89s; }
+.drop-text span:nth-child(19) { animation-delay: 1.99s; }
+.drop-text span:nth-child(20) { animation-delay: 2.09s; }
+.drop-text span:nth-child(21) { animation-delay: 2.19s; }
+.drop-text span:nth-child(22) { animation-delay: 2.29s; }
+.drop-text span:nth-child(23) { animation-delay: 2.39s; }
+.drop-text span:nth-child(24) { animation-delay: 2.49s; }
+.drop-text span:nth-child(25) { animation-delay: 2.59s; }
+.drop-text span:nth-child(26) { animation-delay: 2.69s; }
+.drop-text span:nth-child(27) { animation-delay: 2.79s; }
+.drop-text span:nth-child(28) { animation-delay: 2.89s; }
+.drop-text span:nth-child(29) { animation-delay: 2.99s; }
+.drop-text span:nth-child(30) { animation-delay: 3.09s; }
+.drop-text span:nth-child(31) { animation-delay: 3.19s; }
+.drop-text span:nth-child(32) { animation-delay: 3.29s; }
+.drop-text span:nth-child(33) { animation-delay: 3.39s; }
+.drop-text span:nth-child(34) { animation-delay: 3.49s; }
+.drop-text span:nth-child(35) { animation-delay: 3.59s; }
+.drop-text span:nth-child(36) { animation-delay: 3.69s; }
+.drop-text span:nth-child(37) { animation-delay: 3.79s; }
+.drop-text span:nth-child(38) { animation-delay: 3.89s; }
+.drop-text span:nth-child(39) { animation-delay: 3.99s; }
+.drop-text span:nth-child(40) { animation-delay: 4.09s; }
+.drop-text span:nth-child(41) { animation-delay: 4.19s; }
+.drop-text span:nth-child(42) { animation-delay: 4.29s; }
+.drop-text span:nth-child(43) { animation-delay: 4.39s; }
+.drop-text span:nth-child(44) { animation-delay: 4.49s; }
+.drop-text span:nth-child(45) { animation-delay: 4.59s; }
+.drop-text span:nth-child(46) { animation-delay: 4.69s; }
+.drop-text span:nth-child(47) { animation-delay: 4.79s; }
+.drop-text span:nth-child(48) { animation-delay: 4.89s; }
+.drop-text span:nth-child(49) { animation-delay: 4.99s; }
+.drop-text span:nth-child(50) { animation-delay: 5.09s; }
+.drop-text span:nth-child(51) { animation-delay: 5.19s; }
+.drop-text span:nth-child(52) { animation-delay: 5.29s; }
+.drop-text span:nth-child(53) { animation-delay: 5.39s; }
+.drop-text span:nth-child(54) { animation-delay: 5.49s; }
+.drop-text span:nth-child(55) { animation-delay: 5.59s; }
+.drop-text span:nth-child(56) { animation-delay: 5.69s; }
+
+
+/* Drop animation */
+
+@keyframes dropLetter {
+    0% {
+        transform: translateY(-30px);
+        opacity: 0.6;
+    }
+    40% {
+        transform: translateY(-15);
+        opacity: 1;
+    }
+    60% {
+        transform: translateY(-8px);
+        opacity: 1;
+    }
+    80% {
+        transform: translateY(0);
+        opacity: 1;
+    }
+    100% {
+        transform: translateY(-15);
+        opacity: 1;
+    }
+}
+
 .logo-1{
     max-width: 30%;
     max-height: 40%;
@@ -169,6 +263,7 @@ header nav a{
     
 }
 
+/* Intro Container editing */
 .intro{
     margin-top: 30px;
     margin-bottom: 30px;
@@ -184,55 +279,16 @@ header nav a{
     border-radius: 10px;
     background-color: darkslateblue;
 }
-.con-main{
-    display: flex;
-    flex-direction: column;
-    gap: 2em;
-    margin-top: 30px;
-    margin-bottom: 30px;
-    justify-content: center;
-    align-items: center;
-    transition: all 4s ease-in-out;
-    animation: floatBounce 6s ease-in-out infinite;
 
-}
-@keyframes floatBounce{
-    0%{
-        transform: translateY(0);
-        opacity: 0.6;
-    }
-    25%{
-        transform: translateY(-10px);
-        opacity: 0.8;
-    }
-    50%{
-        transform: translateY(-15);
-        opacity: 1.0;
-    }
-    75%{
-        transform: translateY(-10px);
-        opacity: 0.8;
-    }
-    100%{
-        transform: translateY(0);
-        opacity: 0.6;
-    }
-}
 
-p{
+/* p{
     font-size: larger;
-}
-.dr-2{
-    width: 450px;
-    height: 300px;
-}
-.p2{
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-    color: rgb(47, 65, 80);
-    font-weight: 500;
-}
+} */
+
+
+
+
+/* Con-2 editing */
 .con-2{
     padding: 15px;
     margin: 20px;
@@ -241,6 +297,20 @@ p{
     border: 4px solid black;
     border-radius: 20px
 }
+
+.p2{
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: rgb(47, 65, 80);
+    font-weight: 500;
+}
+
+.dr-2{
+    width: 450px;
+    height: 300px;
+}
+
 .con-2 p {
     word-wrap: normal;
     text-align: center;
@@ -266,7 +336,8 @@ p{
     }
 }
 
-/* complexxxxxx */
+/* Image-2 container editing */
+
 .image-2{
     border-radius: 30px;
     display: flex;
@@ -275,6 +346,11 @@ p{
     margin-top: 35px;
     margin-bottom: 45px;
 }
+.logo-2{
+    width: 100%;
+    height: 100%;
+}
+
 .logo-2{
     width: 50%;
     height: 60%;
@@ -287,6 +363,63 @@ p{
     font-family: serif;
     color:darkorange
 }
+
+/* con-main container editing */
+.con-main{
+    display: flex;
+    flex-direction: column;
+    gap: 2em;
+    margin-top: 30px;
+    margin-bottom: 30px;
+    justify-content: center;
+    align-items: center;
+    transition: all 4s ease-in-out;
+    animation: floatBounce 6s ease-in-out infinite;
+
+}
+p{
+    font-size: larger;
+}
+.Waziwa-1 h2 {
+    font-size: 34px;
+    font-weight: 800;
+    color: #0a3d62;
+    margin-bottom: 15px;
+}
+.Waziwa-1 .pp1 {
+    text-transform: uppercase;
+    letter-spacing: 1px;
+}
+
+@keyframes floatBounce{
+    0%{
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+    25%{
+        transform: translateY(-10px);
+        opacity: 0.8;
+    }
+    50%{
+        transform: translateY(-15px);
+        opacity: 1.0;
+    }
+    75%{
+        transform: translateY(-10px);
+        opacity: 0.8;
+    }
+    100%{
+        transform: translateY(0);
+        opacity: 0.6;
+    }
+}
+.Waziwa-1{
+    width: 900px;
+    border-radius: 40px;
+    padding: 15px;
+    background-color: pink;
+}
+
 
 @media  screen and (max-width: 800px) {
     .con-main{
