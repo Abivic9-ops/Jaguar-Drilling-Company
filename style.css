@@ -1354,8 +1354,11 @@ transform: translateY(-10px);
 }
 
 .projects-title-image{
+    justify-content: center;
+    align-items: center;
+    padding: 25px;
       width: 100%;
-        max-width: 90%;
+        max-width: 100%;
         text-align: center;
         border-radius: 40px;
  animation: popup 5.3s ease-in-out infinite;
