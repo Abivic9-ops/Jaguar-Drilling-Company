@@ -120,10 +120,8 @@ This project reflects practical frontend development experience with a focus on 
 
 Future Enhancements
 The architecture allows for potential future integration of:
-
 Backend contact form handling
 Project management dashboard
-
 Client portal
 SEO optimization strategies
 Performance enhancements
